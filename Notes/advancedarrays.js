@@ -72,6 +72,7 @@ const highestNumber = (nums) => {
       result = num;
     }
   }
+  // when you return this variable in curly brackets it creates the value into an object
   return { result };
 };
 console.log(highestNumber(nums));
@@ -138,8 +139,6 @@ const letterFrequency = (phrase) => {
 //  almost the same function as letterfrequency()
 // Objective: count how many words are in the phrase
 
-//   createing a prompt for user to enter a phrase with words
-
 const wordFrequency = (phrase) => {
   // createing an array with each word in it seperated
   // by the spaces
@@ -158,7 +157,39 @@ console.log(
 // and sort the numbers inside from least to greatest
 // ***********code block************
 const leastToGreatest = (array) => {
+  // added an anonymous function to sort() method
+  // it simply takes params of a & b and minuses a from b to see which
+  // value is greater it also accounts for negative numbers
   let sortedNumArray = array.sort((a, b) => a - b);
   return { sortedNumArray };
 };
-console.log(leastToGreatest([9, 7, 5, 3, 1, 2, 4, 6, 8, 10, -2, 10, 10]));
+console.log(
+  "value of least to greatest",
+  leastToGreatest([9, 7, 5, 3, 1, 2, 4, 6, 8, 10, -2, 10, 10])
+);
+// ******************HIGHER ORDER FUNCTIONS **************.
+// map
+// filter
+// reduce
+// ***** EXAMPLE OF MAP******
+// objective map loops thru the array
+// and prints out each item in the array to the console.
+let randomArray = [1, 2, 3, "A", "🥷", "(❁´◡`❁)"];
+// calling map on the array created above putting in an
+//  anonymous function to print out each item
+// in the array 3 number values and 3 string values
+randomArray.map((number) =>
+  console.log("map example: prints out each item in the array", number)
+);
+// *********************************
+// filter
+const filter = (numbers, greaterThan) => {
+  let result = [];
+  for (const number of numbers) {
+    if (number > greaterThan) {
+      result.push(number);
+    }
+  }
+  return result;
+};
+console.log(filter([1, 2, 3, 4, 5, 6], 3));

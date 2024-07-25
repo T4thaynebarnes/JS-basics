@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+     <button class="weatherbutton" onclick ="handleNames()">what's your name😍</button>
+      <button class="weatherbutton" onclick="handleBeaverBalls()">
+        weather?
+      </button>
+      <button onclick="handleSum()" class="weatherbutton">sum</button>
+    
+      
+      <button class="weatherbutton" onclick="handleCalculator()">
+        Tip calculator 🪙
+      
+
+      </button>
+      
+    </div>
+   
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <div id="nameDisplay" class="row"></div>
+                <div id="weather" class="row"></div>
+                <h1>addition:</h1>
+                <div id="sum" class="row"> </div>
+                <h4>subtraction</h4>
+                <div>
+                    <button onclick="handleSub(8,2)" class="weather">subtraction</button>
+                    <div id="sub" class="row"></div>
+                </div>
+                
+                
+            </div>
+            <div class="column">
+                <div id="tip" class="row"></div>
+                <div id="foodBill" class="row"> </div>
+                <div id="totalAmount" class="row"></div>
+
+                
+            </div>
+        </div>
+  </body>
+  <script src="apps.js"></script>
+  <script src="functions.js"></script>
+</html>

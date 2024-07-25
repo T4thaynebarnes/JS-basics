@@ -1,0 +1,26 @@
+.header {
+  margin: 0px;
+  background-color: antiquewhite;
+}
+.weatherbutton {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  color: cornsilk;
+  background-color: black;
+  /* border-top-color: aliceblue; */
+}
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.row {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
