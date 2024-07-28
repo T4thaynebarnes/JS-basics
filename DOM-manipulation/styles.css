@@ -1,0 +1,15 @@
+div {
+  width: 150px;
+  height: 150px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+button {
+  width: 150px;
+  height: 150px;
+}

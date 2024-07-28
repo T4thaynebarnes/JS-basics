@@ -3,12 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dom manipulation notes</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="display" style="background-color: blueviolet"></div>
-    <button onclick="handleColorChange()"></button>
+    <div class="container">
+      <button
+        id="violetDiv"
+        style="background-color: blueviolet"
+        value="violet"
+      ></button>
+      <button
+        id="aquaDiv"
+        style="background-color: aquamarine"
+        value="aqua"
+      ></button>
+      <button id="blueDiv" style="background-color: blue" value="Blue"></button>
+    </div>
+    <!-- button can have value property but div cannot it will return undefined -->
+    <div class="container">
+      <button
+        class="colorSquare"
+        id="greenDiv"
+        style="background-color: green"
+        value="green"
+      >
+        Green
+      </button>
+      <button
+        class="colorSquare"
+        id="redDiv"
+        style="background-color: red"
+        value="red"
+      >
+        RED
+      </button>
+      <button
+        class="colorSquare"
+        id="yellowDiv"
+        style="background-color: yellow"
+        value="yellow"
+      >
+        Yellow
+      </button>
+    </div>
 
     <script src="apps.js"></script>
   </body>
