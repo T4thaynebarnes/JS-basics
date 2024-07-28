@@ -103,33 +103,62 @@ actorlist.innerHTML = `<h1>${names}</h1>`;
 const pokemonAPI = [
   {
     name: "Charmander",
-    level: 5,
+    level: 1,
     type: "fire",
     image: "/Notes/assets/charmander.jpg",
   },
   {
     name: "Pikachu",
-    level: 7,
+    level: 2,
     type: "electric",
     image: "/Notes/assets/pikachu.jpg",
   },
-  { name: "Bulbasaur", level: 10, type: "grass" },
-  { name: "Riachu", level: 11, type: "electric" },
-  { name: "Vulpix", level: 20, type: "fire" },
-  { name: "Ninetales", level: 19, type: "fire" },
+  {
+    name: "Bulbasaur",
+    level: 3,
+    type: "grass",
+    image: "/Notes/assets/bulbasaur.jpg",
+  },
+  {
+    name: "Riachu",
+    level: 4,
+    type: "electric",
+    image: "/Notes/assets/riachu.jpg",
+  },
+  { name: "Vulpix", level: 5, type: "fire", image: "/Notes/assets/vulpix.jpg" },
+  {
+    name: "Ninetales",
+    level: 6,
+    type: "fire",
+    image: "/Notes/assets/ninetales.png",
+  },
 ];
-// me practicing filter used it to filter by level any thing greater or equal to 19 will appear on the dom
+//function to target with onclock event listener
+const pokeResponsebtn = () => {
+  // a setting a prompt to the user to enter a number that will filter the array and display the result on the DOM
+  let reponse = Number(prompt("enter a number of 1-6, get a surprise!"));
+  // storing returned filter array in a variable
+  let pokemonArray = pokemonAPI.filter((pokemon) => pokemon.level === reponse);
+  console.log(pokemonArray);
+  // storing the returned array from calling map on the filtered array results and joining them with a comma, displaying the name properties of the filtered results
+  let pokemonNames = pokemonArray.map((poke) => poke.name).join(", ");
+  let pokemonImages = pokemonArray
+    .map((poke) => `<img src ="${poke.image}" alt="${poke.name}">`)
+    .join(" ");
+  // targeting a div on my index.html file to inject the name properties of the results on the dom
+  pokeList.innerHTML = `<div><h1>${pokemonNames}</h1></div><img>${pokemonImages}</img>`;
+};
+
 // storing returned filter array in a variable
-let reponse = Number(prompt("enter a level number?"));
-let pokemonArray = pokemonAPI.filter((pokemon) => pokemon.level === reponse);
-console.log(pokemonArray);
+// let pokemonArray = pokemonAPI.filter((pokemon) => pokemon.level === reponse);
+// console.log(pokemonArray);
 // storing the returned array from calling map on the filtered array results and joining them with a comma, displaying the name properties of the filtered results
-let pokemonNames = pokemonArray.map((poke) => poke.name).join(", ");
-let pokemonImages = pokemonArray
-  .map((poke) => `<img src ="${poke.image}" alt="${poke.name}">`)
-  .join(" ");
+// let pokemonNames = pokemonArray.map((poke) => poke.name).join(", ");
+// let pokemonImages = pokemonArray
+// .map((poke) => `<img src ="${poke.image}" alt="${poke.name}">`)
+// .join(" ");
 // targeting a div on my index.html file to inject the name properties of the results on the dom
-pokeList.innerHTML = `<div><h1>${pokemonNames}</h1></div><img>${pokemonImages}</img>`;
+// pokeList.innerHTML = `<div><h1>${pokemonNames}</h1></div><img>${pokemonImages}</img>`;
 
 // reduce - takes in a function as an argument hence the meaning of higherorder function
 // loops thru and gives you back the accumulator

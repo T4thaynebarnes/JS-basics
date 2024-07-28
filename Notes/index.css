@@ -9,3 +9,14 @@
 .header {
   color: red;
 }
+
+#pokeList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  /* height: 100vh; */
+  height: 300px;
+  width: 300px;
+  border: solid;
+}
