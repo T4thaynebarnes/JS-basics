@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>super Hero API excercise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="name-tag"></h1>
+    <input id="searchInput" type="text" />
+    <button onclick="handleSearchHero(searchInput.value)">🔍</button>
+    <div class="container">
+      <div id="img-container"></div>
+      <div id="stats-container">
+        <div id="" class="data-board"></div>
+        <div id="combat" class="data-board"></div>
+        <div id="appearance" class="data-board"></div>
+        <div id="connections" class="data-board"></div>
+        <div id="strength" class="data-board"></div>
+        <div id="speed" class="data-board"></div>
+      </div>
+      <div>
+        <button onclick="getSuperHero(handleRandomHero())">Random Hero</button>
+        <!-- <button onclick="handleSearchHero(searchInput.value)">test</button> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
