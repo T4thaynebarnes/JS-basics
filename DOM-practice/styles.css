@@ -1,0 +1,29 @@
+#container {
+  display: grid;
+  justify-content: center;
+  margin: 15px;
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+}
+img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto;
+}
+button {
+  font-size: 50px;
+  max-height: 100px;
+  max-width: 100%;
+}
+.btncontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.score-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* justify-content: space-between; */
+}

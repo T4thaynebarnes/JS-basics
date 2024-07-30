@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>vote on this picture! It will count your votes</h1>
+    <div id="container">
+      <img src="/DOM-practice/assets/samurai.jpg" alt="" />
+      <div class="score-board">
+        <div id="voteUpScore"></div>
+        <div id="voteDownScore"></div>
+      </div>
+      <div class="btncontainer">
+        <button id="voteUp" value="voteUp">👍</button
+        ><button onclick="handleVoteUp()" id="voteDown" value="voteDown">
+          👎
+        </button>
+      </div>
+    </div>
+
+    <script src="apps.js"></script>
+  </body>
+</html>
