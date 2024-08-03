@@ -1,0 +1,30 @@
+#header-ctnr {
+  width: 100%;
+  background-color: #f1f1f1; /* Background color for header container */
+  padding: 10px 0; /* Padding for header container */
+}
+
+.header-row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between columns */
+  align-items: center; /* Center items vertically */
+}
+
+.column {
+  flex: 1; /* Equal width for all columns */
+  padding: 10px; /* Padding inside each column */
+  text-align: center; /* Center text inside columns */
+  background-color: #e21919; /* Background color for columns */
+  margin: 0 10px; /* Margin between columns */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .header-row {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+
+  .column {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}

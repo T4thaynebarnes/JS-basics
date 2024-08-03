@@ -1,0 +1,17 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Gold pan",
+      "price": 5,
+      "images": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQWsPDhwQBduo425XVgkEAFUDmJQG85a0r6oW9cbX_qGK-Z2pZi0gotP4rxu09-vy5hGNV15nyFFy8WdU4pBoLuEH0VYgxez9VT1r19w_ubr6g2tl0HAjzAiQDMurL2UUToXTPY4R1TcL8&usqp=CAc"
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

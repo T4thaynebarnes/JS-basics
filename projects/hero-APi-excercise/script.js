@@ -1,4 +1,4 @@
-// API excercise with superheroapi.com
+// API excercise with superheroapi.com we added a search bar that will search the API by the name passed into it in the input field
 
 // url: https://superheroapi.com/api (you have to put .php in the addres sbelow only for this api)
 //regular fetch request
@@ -18,7 +18,7 @@
 // *****************************************************
 // same function as above just using the async await method
 // ACCESS TOKEN*** you need to replace the access token with the one you get at www.superheroapi.com on line 22
-// declaringa variable to store my access token
+// declaring a variable to store my access token
 const SUPERHERO_TOKEN = "5f2598cedb6c194b8e21885a5655cc9a";
 // declaring variable to store the URL for the API
 const BASE_URL = `https://superheroapi.com/api.php/${SUPERHERO_TOKEN}`;
